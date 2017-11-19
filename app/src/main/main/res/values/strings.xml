@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Amigometro</string>
+    <string name="title_activity_friends_list">FriendsListActivity</string>
+</resources>
