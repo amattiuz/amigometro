@@ -41,13 +41,14 @@ public class AmigometroStravaLoginActivity extends AppCompatActivity {
     static final String AMIGOMETRO_CALLBACK_URL = "http://sample-env.j3h2mxghvt.us-west-2.elasticbeanstalk.com";
     public static final String STRAVA_AUTH_TOKEN = "token";
     private TextView mCodeTv;
+    StravaLoginButton loginButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_amigometro_strava_login);
         mCodeTv = (TextView) findViewById(R.id.textView);
-        StravaLoginButton loginButton = (StravaLoginButton) findViewById(R.id.login_button);
+        loginButton = (StravaLoginButton) findViewById(R.id.login_button);
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
